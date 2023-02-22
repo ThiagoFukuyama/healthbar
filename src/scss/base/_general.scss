@@ -1,0 +1,8 @@
+@use "../abstracts" as *;
+
+body {
+    font-family: "Montserrat";
+    background-color: $color-neutral-100;
+    line-height: 1.5;
+    color: $color-primary-800;
+}

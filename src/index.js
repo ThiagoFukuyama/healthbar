@@ -1,2 +1,6 @@
+import "./scss/main.scss";
+import thiago from "./assets/img/thiago.png";
 
-import "./scss/main.scss"
+document.querySelectorAll("[data-img='thiago']").forEach((img) => {
+    img.src = thiago
+})

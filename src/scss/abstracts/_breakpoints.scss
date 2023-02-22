@@ -1,5 +1,7 @@
+@use "functions" as *;
+
 $breakpoints: (
-    small: 30em,
-    medium: 45em,
-    large: 65em,
+    small: toEm(480),
+    medium: toEm(720),
+    large: toEm(1040),
 );

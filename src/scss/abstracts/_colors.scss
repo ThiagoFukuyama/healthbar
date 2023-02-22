@@ -5,6 +5,8 @@
  *
 */
 $-clr-white: hsl(0, 0%, 100%);
+$-clr-lightgray: hsl(0, 0%, 80%);
+$-clr-gray: hsl(0, 0%, 66%);
 $-clr-black: hsl(0, 0%, 0%);
 $-clr-orange-400: hsl(45, 96%, 52%);
 $-clr-green-100: hsl(91, 37%, 85%);
@@ -20,6 +22,8 @@ $-clr-green-900: hsl(91, 37%, 15%);
 $colors: (
     "neutral": (
         "100": $-clr-white,
+        "300": $-clr-lightgray,
+        "500": $-clr-gray,
         "900": $-clr-black,
     ),
     "accent": (
@@ -44,6 +48,9 @@ $colors: (
  *
 */
 $color-neutral-100: var(--clr-neutral-100);
+$color-neutral-300: var(--clr-neutral-300);
+$color-neutral-500: var(--clr-neutral-500);
+$color-neutral-900: var(--clr-neutral-900);
 $color-accent-400: var(--clr-accent-400);
 $color-primary-100: var(--clr-primary-100);
 $color-primary-200: var(--clr-primary-200);
