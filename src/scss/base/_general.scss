@@ -21,3 +21,9 @@ p {
 ul[role="list"] {
     list-style: none;
 }
+
+::selection,
+::-moz-selection {
+    background-color: $color-primary-400;
+    color: $color-neutral-100
+}

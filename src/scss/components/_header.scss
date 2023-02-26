@@ -1,15 +1,20 @@
 @use "../abstracts" as *;
 
 .primary-header {
-    display: flex;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    justify-content: space-between;
-    align-items: center;
-    padding: $size-7;
     background-color: transparent;
+    z-index: 3;
+
+    .primary-header-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: $size-5;
+        padding-bottom: $size-5;
+    }
 
     .logo {
         width: 130px;
