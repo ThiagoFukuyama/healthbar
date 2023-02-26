@@ -1,8 +1,8 @@
 @use "../abstracts" as *;
 
 .container {
-    --container-padding: #{$size-4} * 2;
-    --container-max-width: #{toRem(1024)};
+    --container-padding: #{$size-5} * 2;
+    --container-max-width: #{toRem(1120)};
 
     width: calc(100% - var(--container-padding));
     max-width: var(--container-max-width);
@@ -11,12 +11,12 @@
 
     &--sm {
         @extend .container;
-        --container-max-width: #{toRem(640)};
+        --container-max-width: #{toRem(840)};
     }
 
     &--lg {
         @extend .container;
-        --container-max-width: #{toRem(1200)};
+        --container-max-width: #{toRem(1400)};
     }
 
     &--fluid {

@@ -2,7 +2,22 @@
 
 body {
     font-family: $font-family-base;
+    font-size: $fs-300;
     background-color: $color-neutral-100;
-    line-height: 1.5;
+    line-height: 1.6;
     color: $color-primary-800;
+    font-weight: $fs-700;
+}
+
+section {
+    padding-top: clamp(5rem, 10vw, 6rem);
+    padding-bottom: clamp(5rem, 10vw, 6rem);
+}
+
+p {
+    max-width: 60ch;
+}
+
+ul[role="list"] {
+    list-style: none;
 }

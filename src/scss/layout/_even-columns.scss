@@ -7,5 +7,10 @@
     @include mq(medium) {
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
+
+        > *:only-child {
+            grid-column: 1;
+            grid-row: 1;
+        }
     }
 }

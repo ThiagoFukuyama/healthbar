@@ -4,11 +4,24 @@
  * GLOBAL
  *
 */
-$-clr-white: hsl(0, 0%, 100%);
-$-clr-lightgray: hsl(0, 0%, 80%);
-$-clr-gray: hsl(0, 0%, 66%);
-$-clr-black: hsl(0, 0%, 0%);
+$-clr-gray-100: hsl(0, 0%, 100%);
+$-clr-gray-200: hsl(0, 0%, 90%);
+$-clr-gray-300: hsl(0, 0%, 80%);
+$-clr-gray-400: hsl(0, 0%, 70%);
+$-clr-gray-500: hsl(0, 0%, 60%);
+$-clr-gray-600: hsl(0, 0%, 50%);
+$-clr-gray-700: hsl(0, 0%, 40%);
+$-clr-gray-800: hsl(0, 0%, 30%);
+$-clr-gray-900: hsl(0, 0%, 0%);
+$-clr-orange-100: hsl(45, 96%, 85%);
+$-clr-orange-200: hsl(45, 96%, 78%);
+$-clr-orange-300: hsl(45, 96%, 66%);
 $-clr-orange-400: hsl(45, 96%, 52%);
+$-clr-orange-500: hsl(45, 96%, 46%);
+$-clr-orange-600: hsl(45, 96%, 40%);
+$-clr-orange-700: hsl(45, 96%, 35%);
+$-clr-orange-800: hsl(45, 96%, 30%);
+$-clr-orange-900: hsl(45, 96%, 25%);
 $-clr-green-100: hsl(91, 37%, 85%);
 $-clr-green-200: hsl(91, 37%, 80%);
 $-clr-green-300: hsl(91, 37%, 70%);
@@ -21,13 +34,26 @@ $-clr-green-900: hsl(91, 37%, 15%);
 
 $colors: (
     "neutral": (
-        "100": $-clr-white,
-        "300": $-clr-lightgray,
-        "500": $-clr-gray,
-        "900": $-clr-black,
+        "100": $-clr-gray-100,
+        "200": $-clr-gray-200,
+        "300": $-clr-gray-300,
+        "400": $-clr-gray-400,
+        "500": $-clr-gray-500,
+        "600": $-clr-gray-600,
+        "700": $-clr-gray-700,
+        "800": $-clr-gray-800,
+        "900": $-clr-gray-900,
     ),
     "accent": (
+        "100": $-clr-orange-100,
+        "200": $-clr-orange-200,
+        "300": $-clr-orange-300,
         "400": $-clr-orange-400,
+        "500": $-clr-orange-500,
+        "600": $-clr-orange-600,
+        "700": $-clr-orange-700,
+        "800": $-clr-orange-800,
+        "900": $-clr-orange-900,
     ),
     "primary": (
         "100": $-clr-green-100,
@@ -48,10 +74,25 @@ $colors: (
  *
 */
 $color-neutral-100: var(--clr-neutral-100);
+$color-neutral-200: var(--clr-neutral-200);
 $color-neutral-300: var(--clr-neutral-300);
+$color-neutral-400: var(--clr-neutral-400);
 $color-neutral-500: var(--clr-neutral-500);
+$color-neutral-600: var(--clr-neutral-600);
+$color-neutral-700: var(--clr-neutral-700);
+$color-neutral-800: var(--clr-neutral-800);
 $color-neutral-900: var(--clr-neutral-900);
+
+$color-accent-100: var(--clr-accent-100);
+$color-accent-200: var(--clr-accent-200);
+$color-accent-300: var(--clr-accent-300);
 $color-accent-400: var(--clr-accent-400);
+$color-accent-500: var(--clr-accent-500);
+$color-accent-600: var(--clr-accent-600);
+$color-accent-700: var(--clr-accent-700);
+$color-accent-800: var(--clr-accent-800);
+$color-accent-900: var(--clr-accent-900);
+
 $color-primary-100: var(--clr-primary-100);
 $color-primary-200: var(--clr-primary-200);
 $color-primary-300: var(--clr-primary-300);

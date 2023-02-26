@@ -3,6 +3,20 @@
 @use "sass:math";
 @use "breakpoints" as *;
 
+@mixin flex-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin inset-0() {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
 @mixin mq($size) {
     @if map.has-key($breakpoints, $size) {
 
