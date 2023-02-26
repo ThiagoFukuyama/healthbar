@@ -7,6 +7,7 @@
     background-position: center 20%;
     background-size: 500%;
     min-height: 75vh;
+    min-height: 75dvh;
 
     @include mq(medium) {
         background-size: cover;
@@ -18,5 +19,68 @@
 .services {
     .services-item {
         width: 400px;
+    }
+}
+
+.testimonials {
+    .testimonials-grid {
+        display: grid;
+        gap: $size-4;
+        grid-template-areas: "t1"
+                             "t2"
+                             "t3"
+                             "t4";
+        @include mq(medium) {
+            grid-template-areas: "t1 t1 t2"
+                                 "t4 t3 t3";
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        
+        .testimonial {
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            @include flex-center();
+            @for $i from 1 through 4 {
+                &:nth-child(#{$i}) {
+                    grid-area: t#{$i};
+                }
+            }
+
+            .testimonial-header {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: $size-3;
+            }
+
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+                border-radius: 100%;
+                border: 1px solid $color-neutral-400;
+            }
+
+            &.quote-open::before,
+            &.quote-close::before {
+                font-size: 18rem;
+                position: absolute;
+                opacity: 0.2;
+                z-index: -1;
+                right: 15%;
+                top: -6rem;
+            }
+
+            &.quote-open::before {
+                content: "“";
+            }
+
+            &.quote-close::before {
+                content: "”";
+            }
+        }
     }
 }
