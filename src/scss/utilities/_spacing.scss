@@ -1,10 +1,5 @@
 @use "../abstracts" as *;
 
-.mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 @each $size-name, $size-value in $sizes {
 
     /*
@@ -38,35 +33,37 @@
         }
     }
 
-    /*
-    *
-    * PADDINGS
-    *
-    */
-    .p {
-        &-#{$size-name} {
-            padding: $size-value;
-        }
-        &l-#{$size-name} {
-            padding-left: $size-value;
-        }
-        &r-#{$size-name} {
-            padding-right: $size-value;
-        }
-        &t-#{$size-name} {
-            padding-top: $size-value;
-        }
-        &b-#{$size-name} {
-            padding-bottom: $size-value;
-        }
-        &x-#{$size-name} {
-            padding-left: $size-value;
-            padding-right: $size-value;
-        }
-        &y-#{$size-name} {
-            padding-top: $size-value;
-            padding-bottom: $size-value;
+    @if $size-name != auto { 
+
+        /*
+        *
+        * PADDINGS
+        *
+        */
+        .p {
+            &-#{$size-name} {
+                padding: $size-value;
+            }
+            &l-#{$size-name} {
+                padding-left: $size-value;
+            }
+            &r-#{$size-name} {
+                padding-right: $size-value;
+            }
+            &t-#{$size-name} {
+                padding-top: $size-value;
+            }
+            &b-#{$size-name} {
+                padding-bottom: $size-value;
+            }
+            &x-#{$size-name} {
+                padding-left: $size-value;
+                padding-right: $size-value;
+            }
+            &y-#{$size-name} {
+                padding-top: $size-value;
+                padding-bottom: $size-value;
+            }
         }
     }
-
 }
