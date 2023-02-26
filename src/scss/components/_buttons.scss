@@ -1,6 +1,32 @@
+@use "../abstracts" as *;
 
 .button {
-    background-color: aquamarine;
+    position: relative;
+    background-color: $color-primary-500;
     color: white;
-    padding: 1rem 1.25rem;
+    padding: $size-4 $size-6;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        @include inset-0();
+        background-color: $color-primary-600;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 150ms ease-in-out;
+        z-index: -1;
+    }
+
+    &:hover::before,
+    &:focus-visible::before {
+        transform: scaleX(1);
+    }
+
+    &-sm {
+        @extend .button;
+        padding: $size-3 $size-5;
+    } 
 }
