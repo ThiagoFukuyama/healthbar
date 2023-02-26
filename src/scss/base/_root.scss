@@ -6,4 +6,22 @@
             --clr-#{$color}-#{$shade}: #{$value};
         }
     }
+
+    @each $screen-size, $fs-map in $font-sizes {
+        @if $screen-size == "small" {
+
+            @each $fs-name, $fs-value in $fs-map {
+                --fs-#{$fs-name}: #{$fs-value};  
+            }
+
+        } @else {
+            
+            @include mq($screen-size) {
+               @each $fs-name, $fs-value in $fs-map {
+                    --fs-#{$fs-name}: #{$fs-value};  
+                }
+            }
+            
+        }
+    }
 }
