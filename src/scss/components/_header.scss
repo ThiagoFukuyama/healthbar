@@ -1,0 +1,27 @@
+@use "../abstracts" as *;
+
+.primary-header {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: $size-7;
+    background-color: transparent;
+
+    .logo {
+        width: 130px;
+    }
+
+    .primary-navigation {
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: $size-11;
+        }
+
+    }
+}
