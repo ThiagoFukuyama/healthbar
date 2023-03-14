@@ -22,6 +22,16 @@ module.exports = {
                 ]
             },
             {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: { 
+                    loader: "babel-loader",
+                    options: {
+                        presets: ["@babel/preset-env"]
+                    } 
+                }
+            },
+            {
                 test: /\.(png|jpeg|jpg|svg|gif)$/i,
                 type: "asset/resource",
                 generator: {
