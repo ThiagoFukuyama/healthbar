@@ -9,7 +9,7 @@
     "build:prod": "webpack --config webpack.prod.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Thiago Fukuyama Marcilli",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.21.3",
