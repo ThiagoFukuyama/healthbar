@@ -17,31 +17,37 @@
     left: $left;
 }
 
-@mixin mq($size) {
+@mixin mq($size, $orientation: up) {
     @if map.has-key($breakpoints, $size) {
 
         $breakpoint: map.get($breakpoints, $size);
-        @media screen and (min-width: $breakpoint) {
-            @content;
+        @if $orientation == down {
+            @media screen and (max-width: $breakpoint) {
+                @content;
+            }
+        } @else {
+            @media screen and (min-width: $breakpoint) {
+                @content;
+            }
         }
 
     } @else if meta.type-of($size) == number {
 
         @if math.is-unitless($size) {
-
             @error "When using a number with mq(), make sure to include a unit";
-
         } @else {
-
-            @media screen and (min-width: $size) {
-                @content;
+            @if $orientation == down {
+                @media screen and (max-width: $size) {
+                    @content;
+                }
+            } @else {
+                @media screen and (min-width: $size) {
+                    @content;
+                }
             }
-
         }
 
     } @else {
-
         @error "The keyword #{$size} is not in the $breakpoints map";
-
     }
 }

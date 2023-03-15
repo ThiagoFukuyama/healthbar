@@ -15,9 +15,9 @@
 @if map.has-key($breakpoints, small) {
 
     .small-screen-only {
-        display: block;
-        @include mq(small) {
-            display: none;
+        display: none;
+        @include mq(small, down) {
+            display: block;
         }
     }
 

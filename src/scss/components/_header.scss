@@ -1,5 +1,11 @@
 @use "../abstracts" as *;
+@use "sass:map";
 
+/**
+ *
+ * HEADER GERAL
+ *
+ */
 .primary-header {
     position: absolute;
     top: 0;
@@ -20,12 +26,91 @@
         width: 130px;
     }
 
+
+    /**
+     *
+     * NAV TOGGLE BUTTON
+     *
+     */
+    button[aria-controls="primary-navigation"] {
+        border: 0;
+        background-color: transparent;
+        z-index: 3;
+        @include mq(medium) {
+            display: none;
+        }
+
+        svg {
+            fill: $color-primary-600;
+
+            .line {
+                transition: 200ms ease-in-out;
+                transform-origin: center;
+            }
+        }
+
+        &[aria-expanded="true"],
+        &[aria-expanded="true"] {
+            svg {
+                fill: $color-neutral-100;
+            }
+
+            .top {
+                y: 45;
+                transform: rotate(45deg);
+            }
+
+            .middle {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+
+            .bottom {
+                y: 45;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+
+    /**
+     *
+     * PRIMARY NAVIGATION
+     *
+     */
     .primary-navigation {
+    
+        @include mq(medium, down) {
+            position: absolute;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            @include inset(0, 0, 0, 0);
+            min-height: 100vh;
+            min-height: 100dvh;
+            background-color: $color-primary-600;
+            transform: translateX(100%);
+            opacity: 0.5;
+            visibility: hidden;
+            transition: 200ms ease-in-out;
+
+            &.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+        }
 
         ul {
             display: flex;
             align-items: center;
             gap: $size-11;
+
+            @include mq(medium, down) {
+                flex-direction: column;
+                gap: $size-9;
+                align-content: flex-start;
+            }
         }
 
         .nav-link {
@@ -49,6 +134,14 @@
             &:hover::before,
             &:focus::before {
                 transform: scaleX(1);
+            }
+
+            @include mq(medium, down) {
+                color: $color-neutral-100;
+
+                &::before {
+                    background-color: $color-neutral-100;
+                }
             }
         }
 

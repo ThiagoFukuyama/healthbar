@@ -23,9 +23,7 @@
     &:hover::before,
     &:focus::before {
         transform: scaleX(1);
-    }
-
-    
+    } 
 
     &-sm {
         @extend .button;
