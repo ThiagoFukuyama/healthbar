@@ -1,0 +1,24 @@
+@use "../abstracts" as *;
+@use "sass:map";
+
+@if map.has-key($breakpoints, large) {
+
+    .large-screen-only {
+        display: none;
+        @include mq(medium) {
+            display: block;
+        }
+    }
+
+}
+
+@if map.has-key($breakpoints, small) {
+
+    .small-screen-only {
+        display: block;
+        @include mq(small) {
+            display: none;
+        }
+    }
+
+}
