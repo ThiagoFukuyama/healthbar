@@ -1,11 +1,5 @@
 @use "../abstracts" as *;
 
-html,
-body {
-    position: relative;
-    overflow-x: hidden;
-}
-
 body {
     font-family: $font-family-base;
     font-size: $fs-300;

@@ -8,7 +8,9 @@
     background-size: 500%;
     min-height: 75vh;
     min-height: 75dvh;
-
+    padding-top: clamp(10rem, 15vh, 15rem);
+    padding-bottom: clamp(10rem, 15vh, 15rem);
+    
     @include mq(medium) {
         background-size: cover;
         // -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%); 
