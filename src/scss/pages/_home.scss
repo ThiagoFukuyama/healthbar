@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 
 .hero {
-    @include flex-center();
+    @include center(flex);
     background-image: url("../assets/img/hero-bg.jpg");
     background-repeat: no-repeat;
     background-position: center 30%;
@@ -42,7 +42,7 @@
             position: relative;
             z-index: 1;
             overflow: hidden;
-            @include flex-center();
+            @include center(flex);
             @for $i from 1 through 4 {
                 &:nth-child(#{$i}) {
                     grid-area: t#{$i};

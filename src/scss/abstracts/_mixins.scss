@@ -3,18 +3,18 @@
 @use "sass:math";
 @use "breakpoints" as *;
 
-@mixin flex-center() {
-    display: flex;
+@mixin center($display) {
+    display: $display;
     justify-content: center;
     align-items: center;
 }
 
-@mixin inset-0() {
+@mixin inset($top, $right, $bottom, $left) {
     position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
 }
 
 @mixin mq($size) {

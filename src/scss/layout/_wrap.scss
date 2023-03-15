@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 
 .wrap {
-    @include flex-center();
+    @include center(flex);
     flex-wrap: wrap;
     gap: $size-5;
 }
