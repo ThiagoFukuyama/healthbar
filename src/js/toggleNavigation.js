@@ -1,5 +1,4 @@
 
-const nav = document.querySelector("#primary-navigation")
 const navToggle = document.querySelector("button[aria-controls='primary-navigation'")
 
 navToggle.addEventListener("click", toggleNavigation)
