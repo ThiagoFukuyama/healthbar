@@ -12,18 +12,19 @@ module.exports = merge(common, {
                 use: [
                     "style-loader",
                     "css-loader",
-                    "sass-loader"
+                    "postcss-loader",
+                    "sass-loader",
                 ]
             },
         ],
     },
     devServer: {
         static: {
-            directory: path.resolve(__dirname, "dist")
+            directory: path.resolve(__dirname, "dist"),
         },
         port: 3000,
         hot: true,
         compress: true,
-        historyApiFallback: true
+        historyApiFallback: true,
     },
 })
