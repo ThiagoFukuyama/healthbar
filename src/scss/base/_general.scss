@@ -7,11 +7,13 @@ body {
     line-height: 1.6;
     color: $color-neutral-600;
     font-weight: $fs-700;
-    
-    &.scroll-locked {
-        overflow-y: hidden;
-    }
 }
+
+/*! purgecss start ignore */
+body.scroll-locked {
+    overflow-y: hidden;
+}
+/*! purgecss end ignore */
 
 section {
     padding-top: clamp(5rem, 10vw, 6rem);
