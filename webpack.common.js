@@ -14,14 +14,6 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.scss$/,
-                use: [
-                    "style-loader",
-                    "css-loader",
-                    "sass-loader"
-                ]
-            },
-            {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: { 
@@ -35,14 +27,14 @@ module.exports = {
                 test: /\.(png|jpeg|jpg|svg|gif)$/i,
                 type: "asset/resource",
                 generator: {
-                    filename: "assets/img/[name][ext]"
+                    filename: "assets/img/[name].[contenthash][ext]"
                 }
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: 'asset/resource',
                 generator: {
-                    filename: "assets/fonts/[name][ext]"
+                    filename: "assets/fonts/[name].[contenthash][ext]"
                 }
             }
         ]
