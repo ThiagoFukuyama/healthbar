@@ -8,11 +8,9 @@ body {
     color: $color-neutral-600;
     font-weight: $fs-700;
     
-    /*! purgecss start ignore */
     &.scroll-locked {
         overflow-y: hidden;
     }
-    /*! purgecss end ignore */
 }
 
 section {
