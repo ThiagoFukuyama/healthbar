@@ -20,7 +20,6 @@
     "cssnano": "^5.1.15",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.5",
-    "postcss-clamp": "^4.1.0",
     "postcss-loader": "^7.1.0",
     "purgecss-webpack-plugin": "^5.0.0",
     "sass": "^1.58.3",
