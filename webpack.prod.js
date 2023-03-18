@@ -27,7 +27,8 @@ module.exports = merge(common, {
             filename: "[name].[contenthash].css",
         }),
         new PurgeCSSPlugin({
-            paths: glob.sync("./**/*.html")
+            paths: glob.sync("./**/*.html"),
+            safelist: ["active"],
         }),
     ],
 })
