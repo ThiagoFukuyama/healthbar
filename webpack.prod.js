@@ -28,6 +28,9 @@ module.exports = merge(common, {
         }),
         new PurgeCSSPlugin({
             paths: glob.sync("./**/*.html"),
+            safelist: {
+                greedy: [/swiper/],
+            }
         }),
     ],
 })
