@@ -1,3 +1,4 @@
 
 import "./scss/main.scss"
-import "./js/toggleNavigation.js"
+import "./js/toggleNavigation"
+import "./js/foodSlider"

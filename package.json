@@ -11,6 +11,9 @@
   "keywords": [],
   "author": "Thiago Fukuyama Marcilli",
   "license": "ISC",
+  "dependencies": {
+    "swiper": "^9.1.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.21.3",
     "@babel/preset-env": "^7.20.2",
