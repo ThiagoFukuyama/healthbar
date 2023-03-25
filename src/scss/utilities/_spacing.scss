@@ -65,5 +65,25 @@
                 padding-bottom: $size-value;
             }
         }
+
+        /*
+        *
+        * GAPS
+        *
+        */
+        .gap {
+            &-#{$size-name} {
+                gap: $size-value;
+            }
+    
+            &x-#{$size-name} {
+                row-gap: $size-value;
+            }
+            
+            &y-#{$size-name} {
+                column-gap: $size-value;
+            }
+
+        }
     }
 }
