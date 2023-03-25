@@ -41,7 +41,7 @@
         }
 
         svg {
-            fill: $color-primary-500;
+            fill: $color-primary-600;
 
             .line {
                 transition: 200ms ease-in-out;
@@ -96,7 +96,7 @@
             @include inset(0, 0, 0, 0);
             min-height: 100vh;
             min-height: 100dvh;
-            background-image: linear-gradient(to bottom, $color-primary-600 90%, transparent);
+            background-image: linear-gradient(to bottom, $color-primary-500 90%, transparent);
             transform: translateY(-10%);
             opacity: 0;
             visibility: hidden;
