@@ -9,6 +9,12 @@
     text-transform: uppercase;
     overflow: hidden;
     z-index: 1;
+    transition: background-color 200ms ease-in-out;
+
+    &:hover,
+    &:focus {
+        background-color: transparent;
+    }
 
     &::before {
         content: "";
