@@ -3,5 +3,4 @@
 .wrap {
     @include center(flex);
     flex-wrap: wrap;
-    gap: $size-5;
 }

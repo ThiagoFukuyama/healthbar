@@ -1,5 +1,11 @@
+
 @use "../abstracts" as *;
 
+/**
+ *
+ * HERO SECTION
+ *
+ */
 .hero {
     @include center(flex);
     background-image: url("../assets/img/hero-bg.jpg");
@@ -20,12 +26,43 @@
     }
 }
 
+/**
+ *
+ * SERVICES SECTION
+ *
+ */
 .services {
     .services-item {
         width: 400px;
     }
 }
 
+/**
+ *
+ * FOOD SLIDER SECTION
+ *
+ */
+ .foods {
+     .food-slider {
+        --swiper-pagination-color: #{$color-primary-600};
+        padding-bottom: $size-11;
+        padding-left: $size-1;
+        padding-right: $size-1;
+    
+        .slide {
+            @include mq(medium) {
+                height: 400px;
+            }
+        }
+     }
+ }
+
+
+/**
+ *
+ * TESTIMONIALS SECTION
+ *
+ */
 .testimonials {
     .testimonials-grid {
         display: grid;
@@ -63,7 +100,6 @@
             img {
                 width: 40px;
                 height: 40px;
-                object-fit: cover;
                 border-radius: 100%;
                 border: 1px solid $color-neutral-400;
             }

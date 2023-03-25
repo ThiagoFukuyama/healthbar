@@ -2,9 +2,10 @@
 
 .button {
     position: relative;
+    display: inline-block;
     background-color: $color-primary-500;
     color: white;
-    padding: $size-4 $size-6;
+    padding: $size-3 $size-5;
     text-decoration: none;
     text-transform: uppercase;
     overflow: hidden;
@@ -34,6 +35,6 @@
 
     &-sm {
         @extend .button;
-        padding: $size-3 $size-5;
+        padding: $size-2 $size-4;
     } 
 }
