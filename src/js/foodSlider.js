@@ -1,26 +1,29 @@
 
-import Swiper, { Navigation, Pagination } from 'swiper'
+import Swiper, { Navigation, Pagination, Autoplay } from 'swiper'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import 'swiper/css/autoplay'
 
-const swiper = new Swiper(".swiper", {
-modules: [Navigation, Pagination],
-direction: 'horizontal',
-  loop: true,
+const foodSlider = new Swiper(".swiper", {
+    modules: [Navigation, Pagination, Autoplay],
+    direction: 'horizontal',
+    slidesPerView: 1,
+    loop: true,
 
-  pagination: {
-    el: '.swiper-pagination',
-  },
+    speed: 1000,
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
 
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
 
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 })
-
-
