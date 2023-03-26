@@ -17,8 +17,6 @@
     
     @include mq(medium) {
         background-size: cover;
-        // -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%); 
-        // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
     };
 
     @include mq(medium, down) {
@@ -32,6 +30,8 @@
  *
  */
 .services {
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 94%);
+
     .services-item {
         width: 400px;
     }
@@ -43,6 +43,8 @@
  *
  */
  .foods {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
+
      .food-slider {
         --swiper-pagination-color: #{$color-neutral-100};
         padding-bottom: $size-10;
