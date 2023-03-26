@@ -98,6 +98,7 @@
             min-height: 100dvh;
             background-image: linear-gradient(to bottom, $color-primary-500 90%, transparent);
             transform: translateY(-10%);
+            overflow-y: auto;
             opacity: 0;
             visibility: hidden;
             transition: 200ms ease-in-out;
