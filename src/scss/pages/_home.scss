@@ -30,21 +30,24 @@
  *
  */
 .services {
-    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 94%);
-
+    
     .services-item {
         width: 400px;
     }
 }
 
 /**
- *
+*
  * FOOD SLIDER SECTION
  *
  */
  .foods {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
+     clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 98%);
 
+     @include mq(medium) {
+         clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 96%);
+        
+    }
      .food-slider {
         --swiper-pagination-color: #{$color-neutral-100};
         padding-bottom: $size-10;
