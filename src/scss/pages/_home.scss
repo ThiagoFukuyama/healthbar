@@ -64,14 +64,14 @@
                 position: absolute;
                 bottom: -100px;
                 right: -100px;
-                width: 170px;
-                height: 170px;
+                width: 160px;
+                height: 160px;
                 border-radius: 50%;
                 background-color: $color-accent-600;
                 opacity: 0.4;
                 
                 @include mq(small, down) {
-                    transform: scale(0.7) ;
+                    transform: scale(0.8) ;
                 }
             }
         }
