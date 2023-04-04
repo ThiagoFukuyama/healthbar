@@ -14,14 +14,11 @@
     background-size: 500%;
     min-height: 75vh;
     min-height: 75dvh;
+    padding-top: 6.5rem;
     
     @include mq(medium) {
         background-size: cover;
     };
-
-    @include mq(medium, down) {
-        padding-top: 6.5rem
-    }
 }
 
 /**
