@@ -21,6 +21,15 @@ section {
     padding-bottom: 5rem;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: $font-weight-semi-bold;
+}
+
 p {
     max-width: 60ch;
 }
