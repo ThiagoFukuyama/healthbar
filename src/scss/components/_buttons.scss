@@ -2,27 +2,31 @@
 @use "../abstracts" as *;
 
 .button {
+    --btn-bg: #{$color-primary-500};
+    --btn-before-bg: #{$color-primary-600};
+    --btn-text: #{$color-neutral-100};
+
     position: relative;
     display: inline-block;
-    background-color: $color-primary-500;
-    color: white;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
     padding: $size-3 $size-5;
     text-decoration: none;
     text-transform: uppercase;
     overflow: hidden;
     z-index: 1;
-    transition: background-color 200ms ease-in-out;
+    transition: 200ms ease-in-out;
 
     &:hover,
     &:focus {
         background-color: transparent;
-        transition: background-color 300ms ease-in-out;
+        transition: 300ms ease-in-out;
     }
 
     &::before {
         content: "";
         @include inset(0, 0, 0, 0);
-        background-color: $color-primary-600;
+        background-color: var(--btn-before-bg);
         transform: scaleX(0);
         transform-origin: left;
         transition: transform 150ms ease-in-out;
@@ -32,9 +36,35 @@
     &:hover::before,
     &:focus::before {
         transform: scaleX(1);
-    } 
+    }
+     
 
-    &-sm {
+    &--light {
+        @extend .button;
+        --btn-bg: #{$color-neutral-100};
+        --btn-text: #{$color-neutral-800};
+        --btn-before-bg: #{$color-neutral-200};
+    }
+
+    &--outline {
+        @extend .button;
+        background-color: transparent;
+        color: var(--btn-bg);
+        outline: 2px solid;
+        outline-color: var(--btn-bg);
+
+        &::before {
+            background-color: var(--btn-bg);
+        }
+
+        &:hover,
+        &:focus {
+            background-color: var(--btn-bg);
+            color: var(--btn-text);
+        }
+    }
+
+    &--sm {
         @extend .button;
         padding: $size-2 $size-4;
     } 
