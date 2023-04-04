@@ -34,7 +34,7 @@
 }
 
 /**
-*
+ *
  * FOOD SLIDER SECTION
  *
  */
@@ -68,6 +68,20 @@
         }
      }
  }
+
+
+ /**
+  *
+  * CTA SECTION
+  *
+  */
+.cta {
+    background-image: url("../assets/img/cta-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+}
 
 
 /**
