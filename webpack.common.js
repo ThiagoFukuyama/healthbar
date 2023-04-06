@@ -43,7 +43,8 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: "HealthBar",
             filename: "index.html",
-            template: "src/template.html"
+            template: "src/template.html",
+            favicon: "src/assets/img/favicon.ico",
         })
     ]
 }
