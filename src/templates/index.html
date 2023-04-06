@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="<%= require('./assets/img/icons/favicon-16x16.png') %>" sizes="16x16">
-    <link rel="icon" type="image/png" href="<%= require('./assets/img/icons/favicon-32x32.png') %>" sizes="32x32">
-    <link rel="icon" type="image/png" href="<%= require('./assets/img/icons/android-chrome-192x192.png') %>" sizes="192x192">
-    <link rel="apple-touch-icon" href="<%= require('./assets/img/icons/apple-touch-icon.png') %>">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="icon" type="image/png" href="<%= require('../assets/img/icons/favicon-16x16.png') %>" sizes="16x16">
+    <link rel="icon" type="image/png" href="<%= require('../assets/img/icons/favicon-32x32.png') %>" sizes="32x32">
+    <link rel="icon" type="image/png" href="<%= require('../assets/img/icons/android-chrome-192x192.png') %>" sizes="192x192">
+    <link rel="apple-touch-icon" href="<%= require('../assets/img/icons/apple-touch-icon.png') %>">
+    <title>HealthBar</title>
 </head>
 <body>
 
 
     <!-- HEADER/NAV -->
-    <%= require('html-loader!./partials/header.html').default %>
+    <%= require('html-loader!../partials/header.html').default %>
 
 
     <main>
@@ -46,19 +46,19 @@
 
                 <div class="wrap gap-5 mt-10">
                     <div class="services-item | px-5 py-4">
-                        <img src="<%= require('./assets/img/salad.png') %>" class="mx-auto mb-5" width="100" height="100" alt="Salad icons created by Atif Arshad - Flaticon">
+                        <img src="<%= require('../assets/img/salad.png') %>" class="mx-auto mb-5" width="100" height="100" alt="Salad icons created by Atif Arshad - Flaticon">
                         <h2 class="text-primary-600 fs-500 fw-bold mb-2">Foco em qualidade</h2>
                         <p class="fs-300">Nossos processos de segurança garantem que os alimentos estejam sempre preservados em seu melhor estado</p>
                     </div>
 
                     <div class="services-item | px-5 py-4">
-                        <img src="<%= require('./assets/img/chef-hat.png') %>"class="mx-auto mb-6"  width="95" height="95" alt="Chef hat icons created by Freepik - Flaticon">
+                        <img src="<%= require('../assets/img/chef-hat.png') %>"class="mx-auto mb-6"  width="95" height="95" alt="Chef hat icons created by Freepik - Flaticon">
                         <h2 class="text-primary-600 fs-500 fw-bold mb-2">Chefes e nutricionistas</h2>
                         <p class="fs-300">Profissionais especializados asseguram pratos deliciosos e saudáveis conforme a necessidade de cada pessoa</p>
                     </div>
 
                     <div class="services-item | px-5 py-4">
-                        <img src="<%= require('./assets/img/truck.png') %>" class="mx-auto mb-2" width="110" height="110" alt="Delivery icons created by karthiks_18 - Flaticon">
+                        <img src="<%= require('../assets/img/truck.png') %>" class="mx-auto mb-2" width="110" height="110" alt="Delivery icons created by karthiks_18 - Flaticon">
                         <h2 class="text-primary-600 fs-500 fw-bold mb-2">Entrega rápida e confiável</h2>
                         <p class="fs-300">Certificamos a entrega a domicílio em todo o país com nosso sistema de entregas próprio, agilizando o processo</p>
                     </div>
@@ -80,7 +80,7 @@
                         <div class="swiper-slide | bg-neutral-100 shadow-2">
                             <div class="even-columns flex-center">
                                 <div class="swiper-image-wrapper | shadow-3">
-                                    <img src="<%= require('./assets/img/arroz-de-baga-com-proteina-de-tofu-e-manjericao-frito.jpg') %>" alt="Arroz de baga com proteína de tofu e manjericão frito">
+                                    <img src="<%= require('../assets/img/arroz-de-baga-com-proteina-de-tofu-e-manjericao-frito.jpg') %>" alt="Arroz de baga com proteína de tofu e manjericão frito">
                                 </div>
                                 <div class="p-8">
                                     <h1 class="fs-500 text-primary-700 mb-4">Arroz de baga com tofu e manjericão</h1>
@@ -96,7 +96,7 @@
                         <div class="swiper-slide | bg-neutral-100 shadow-2">
                             <div class="even-columns flex-center">
                                 <div class="swiper-image-wrapper | shadow-3">
-                                    <img src="<%= require('./assets/img/macarrao-com-molho-de-tomate-com-salsicha.jpg') %>" alt="Macarrão com molho de tomate com salsicha">
+                                    <img src="<%= require('../assets/img/macarrao-com-molho-de-tomate-com-salsicha.jpg') %>" alt="Macarrão com molho de tomate com salsicha">
                                 </div>
                                 <div class="p-8">
                                     <h1 class="fs-500 text-primary-700 mb-4">Macarrão com molho de tomate e salsicha</h1>
@@ -112,7 +112,7 @@
                         <div class="swiper-slide | bg-neutral-100 shadow-2">
                             <div class="even-columns flex-center">
                                 <div class="swiper-image-wrapper | shadow-3">
-                                    <img src="<%= require('./assets/img/peito-de-frango-grelhado-e-salada-de-legumes.jpg') %>" alt="Peito de frango grelhado e salada de legumes">
+                                    <img src="<%= require('../assets/img/peito-de-frango-grelhado-e-salada-de-legumes.jpg') %>" alt="Peito de frango grelhado e salada de legumes">
                                 </div>
                                 <div class="p-8">
                                     <h1 class="fs-500 text-primary-700 mb-4">Peito de frango grelhado com legumes</h1>
@@ -128,7 +128,7 @@
                         <div class="swiper-slide | bg-neutral-100 shadow-2">
                             <div class="even-columns flex-center">
                                 <div class="swiper-image-wrapper | shadow-3">
-                                    <img src="<%= require('./assets/img/salada-de-bife-grelhado-com-legumes.jpg') %>" alt="Salada de bife grelhado com legumes">
+                                    <img src="<%= require('../assets/img/salada-de-bife-grelhado-com-legumes.jpg') %>" alt="Salada de bife grelhado com legumes">
                                 </div>
                                 <div class="p-8">
                                     <h1 class="fs-500 text-primary-700 mb-4">Bife grelhado com legumes</h1>
@@ -144,7 +144,7 @@
                         <div class="swiper-slide | bg-neutral-100 shadow-2">
                             <div class="even-columns flex-center">
                                 <div class="swiper-image-wrapper | shadow-3">
-                                    <img src="<%= require('./assets/img/salada-de-salmao-com-verduras.jpg') %>" alt="Salada de salmão com verduras">
+                                    <img src="<%= require('../assets/img/salada-de-salmao-com-verduras.jpg') %>" alt="Salada de salmão com verduras">
                                 </div>
                                 <div class="p-8">
                                     <h1 class="fs-500 text-primary-700 mb-4">Salada de salmão com verduras</h1>
@@ -160,7 +160,7 @@
                         <div class="swiper-slide | bg-neutral-100 shadow-2">
                             <div class="even-columns flex-center">
                                 <div class="swiper-image-wrapper | shadow-3">
-                                    <img src="<%= require('./assets/img/salada-e-peito-de-frango-com-ovos.jpg') %>" alt="Salada e peito de frango com ovos">
+                                    <img src="<%= require('../assets/img/salada-e-peito-de-frango-com-ovos.jpg') %>" alt="Salada e peito de frango com ovos">
                                 </div>
                                 <div class="p-8">
                                     <h1 class="fs-500 text-primary-700 mb-4">Salada e peito de frango com ovos</h1>
@@ -191,7 +191,7 @@
                     <div class="testimonial quote-open | bg-primary-600 text-neutral-100 shadow-2 p-5">
                         <div class="testimonial-inner">
                             <header class="testimonial-header | mb-3">
-                                <img class="object-cover" src="<%= require('./assets/img/testimonial1.jpg') %>" alt="Sara Nascimento">
+                                <img class="object-cover" src="<%= require('../assets/img/testimonial1.jpg') %>" alt="Sara Nascimento">
                                 <h2 class="fs-400">Sara Nascimento</h2>
                             </header>
                             <p class="italic">A qualidade da comida da HealthBar é surpreendente. É a única empresa que conheço que trata com tanto profissionalismo e capricho os alimentos entregues aos clientes.</p>
@@ -201,7 +201,7 @@
                     <div class="testimonial | shadow-2 p-6">
                         <div class="testimonial-inner">
                             <header class="testimonial-header | mb-3">
-                                <img class="object-cover" src="<%= require('./assets/img/testimonial2.jpg') %>" alt="Guilherme Cardoso">
+                                <img class="object-cover" src="<%= require('../assets/img/testimonial2.jpg') %>" alt="Guilherme Cardoso">
                                 <h2 class="fs-400">Guilherme Cardoso</h2>
                             </header>
                             <p class="italic">O que mais aprecio é o preço acessível do serviço para o acesso a pratos excepcionais que você prepara em casa.</p>
@@ -211,7 +211,7 @@
                     <div class="testimonial quote-close | bg-accent-800 text-neutral-100 shadow-2 p-5">
                         <div class="testimonial-inner">
                             <header class="testimonial-header | mb-3">
-                                <img class="object-cover" src="<%= require('./assets/img/testimonial3.jpg') %>" alt="Miriam Lopes">
+                                <img class="object-cover" src="<%= require('../assets/img/testimonial3.jpg') %>" alt="Miriam Lopes">
                                 <h2 class="fs-400">Miriam Lopes</h2>
                             </header>
                             <p class="italic">A HealthBar me inspirou em mudar meus hábitos alimentares para melhor. Gosto cada vez mais dos ingredientes disponíveis no cardápio e pretendo continuar aproveitando esse serviço incrível.</p>
@@ -221,7 +221,7 @@
                     <div class="testimonial | shadow-2 p-6">
                         <div class="testimonial-inner">
                             <header class="testimonial-header | mb-3">
-                                <img class="object-cover" src="<%= require('./assets/img/testimonial4.jpg') %>" alt="Paulo Flasmo">
+                                <img class="object-cover" src="<%= require('../assets/img/testimonial4.jpg') %>" alt="Paulo Flasmo">
                                 <h2 class="fs-400">Paulo Flasmo</h2>
                             </header>
                             <p class="italic">Os alimentos de alta qualidade que recebemos estimularam até meus filhos a comer legumes e verduras. Impressionante.</p>

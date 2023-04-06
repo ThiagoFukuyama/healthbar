@@ -1,4 +1,5 @@
 const path = require("path")
+const fs = require("fs")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 
 module.exports = {
@@ -41,10 +42,14 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: "HealthBar",
             filename: "index.html",
-            template: "src/template.html",
+            template: "src/templates/index.html",
             favicon: "src/assets/img/icons/favicon.ico",
-        })
+        }),
+        new HtmlWebpackPlugin({
+            filename: "teste.html",
+            template: "src/templates/teste.html",
+            favicon: "src/assets/img/icons/favicon.ico",
+        }),
     ]
 }
