@@ -44,7 +44,7 @@ module.exports = {
             title: "HealthBar",
             filename: "index.html",
             template: "src/template.html",
-            favicon: "src/assets/img/favicon.ico",
+            favicon: "src/assets/img/icons/favicon.ico",
         })
     ]
 }
