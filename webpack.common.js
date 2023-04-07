@@ -2,6 +2,17 @@ const path = require("path")
 const fs = require("fs")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 
+const directoryPath = "src/templates/"
+const templates = []
+
+fs.readdirSync(directoryPath).forEach((file) => {
+    templates.push(new HtmlWebpackPlugin({
+        filename: file,
+        template: `${directoryPath}${file}`,
+        favicon: "src/assets/img/icons/favicon.ico",
+    }))
+})
+
 module.exports = {
     entry: {
         main: path.resolve(__dirname, "src/index.js"),  
@@ -41,15 +52,8 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            filename: "index.html",
-            template: "src/templates/index.html",
-            favicon: "src/assets/img/icons/favicon.ico",
-        }),
-        new HtmlWebpackPlugin({
-            filename: "teste.html",
-            template: "src/templates/teste.html",
-            favicon: "src/assets/img/icons/favicon.ico",
-        }),
+        ...templates
     ]
 }
+
+
