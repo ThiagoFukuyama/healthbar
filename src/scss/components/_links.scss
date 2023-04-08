@@ -1,0 +1,12 @@
+
+@use "../abstracts" as *;
+
+.link {
+    color: $color-primary-700;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+}
