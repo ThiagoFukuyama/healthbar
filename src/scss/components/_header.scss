@@ -25,7 +25,20 @@
 
     .logo {
         width: 130px;
+        z-index: 3;
+
+        * {
+            transition: 200ms ease-in-out;
+        }
     }
+
+    /*! purgecss start ignore */
+    .logo--navigation-expanded {
+        * {
+            fill: $color-neutral-100;
+        }
+    }
+    /*! purgecss end ignore */
 
 
     /**
