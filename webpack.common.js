@@ -2,7 +2,7 @@ const path = require("path")
 const fs = require("fs")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 
-const directoryPath = "src/templates/"
+const directoryPath = "src/pages/"
 const templates = []
 
 fs.readdirSync(directoryPath).forEach((file) => {
