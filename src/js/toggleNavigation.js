@@ -8,7 +8,7 @@ function toggleNavigation() {
     let isExpanded = navToggle.getAttribute("aria-expanded") === "false" ? "true" : "false"
     navToggle.setAttribute("aria-expanded", isExpanded) 
 
-    headerLogo.classList.toggle("logo--navigation-expanded")
+    headerLogo.classList.toggle("logo-white")
     document.body.classList.toggle("scroll-locked")
 }
 

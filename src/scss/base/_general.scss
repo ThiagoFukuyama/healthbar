@@ -38,6 +38,14 @@ ul[role="list"] {
     list-style: none;
 }
 
+/*! purgecss start ignore */
+.logo-white {
+    * {
+        fill: $color-neutral-100;
+    }
+}
+/*! purgecss end ignore */
+
 ::selection,
 ::-moz-selection {
     background-color: $color-primary-400;
