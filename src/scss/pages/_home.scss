@@ -42,9 +42,9 @@
 #box-contents {
     border-top: 1px solid $color-neutral-300;
 
-    .even-columns {        
+    .box-contents-columns {        
         gap: $size-9;
-        @include mq(medium) {
+        @include mq(large) {
             gap: $size-13;
         }
     }

@@ -13,4 +13,11 @@
     @include mq(medium, down) {
         flex-direction: column;
     }
+
+    &--reverse {
+        @extend .even-columns;
+        @include mq(medium, down) {
+            flex-direction: column-reverse;
+        }
+    }
 }
