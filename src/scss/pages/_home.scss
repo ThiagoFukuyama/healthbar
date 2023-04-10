@@ -19,6 +19,12 @@
     @include mq(medium) {
         background-size: cover;
     };
+
+    &__box {
+        @include mq(medium) {
+            width: 50%;
+        }
+    }
 }
 
 /**

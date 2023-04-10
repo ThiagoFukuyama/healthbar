@@ -1,0 +1,36 @@
+
+@use "../abstracts" as *;
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    &__group {
+        position: relative;
+        border-bottom-width: 2px ;
+        border-bottom-style: solid;
+        border-bottom-color: $color-primary-500;
+    }
+    
+    &__input {
+        width: 100%;
+        border: 0;
+        padding: $size-2 $size-3;
+        padding-left: 0;
+
+        &:focus {
+            outline: 0;
+        }
+
+        &::placeholder {
+            font-family: $font-family-base;
+            font-size: inherit;
+            color: $color-primary-800;
+        }
+    }
+
+    &__input:focus + &__label,
+    &__input:valid + &__label {
+        opacity: 0;
+    }
+}

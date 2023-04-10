@@ -1,0 +1,16 @@
+
+@use "../abstracts" as *;
+
+.primary-footer {
+    background-color: $color-neutral-100;
+    font-size: $fs-200;
+
+    .copyright {
+        text-align: center;
+        padding-top: $size-3;
+        padding-bottom: $size-3;
+        margin-top: $size-10;
+        color: $color-primary-500;
+        border-top: 1px solid $color-primary-500;
+    }
+}
