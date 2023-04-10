@@ -19,9 +19,9 @@
 
     <main>
         <!-- HERO -->
-        <section class="hero">
-            <div class="container-lg">
-                <div class="hero__box">
+        <section id="hero">
+            <div class="container--lg">
+                <div class="hero-box">
                     <h1 class="text-primary-800 fs-700 fw-bold">
                         Comida gostosa também pode ser saudável
                     </h1>
@@ -35,10 +35,10 @@
 
 
         <!-- SERVIÇOS -->
-        <section class="services | text-center">
-            <div class="container-lg">
-                <h1 class="text-primary-800 fs-600">Feito por profissionais</h1>
-                <p class="text-neutral-500 mt-2 mx-auto">Conheça o porquê de oferecermos os melhores serviços do ramo alimentício</p>
+        <section id="services" class="text-center">
+            <div class="container--lg">
+                <h1 class="text-primary-700 fs-600">Feito por profissionais</h1>
+                <p class="text-neutral-500 mt-2 mx-auto">Oferecemos os melhores serviços do ramo alimentício</p>
 
                 <div class="wrap flex-center gap-5 mt-10">
                     <div class="services-item | px-5 py-4">
@@ -63,8 +63,47 @@
         </section>
 
 
+        <!-- O QUE TEM NA CAIXA -->
+        <section id="box-contents">
+            <div class="container">
+                <div class="even-columns flex-center">
+                    <div>
+                        <h1 class="fs-600 text-primary-700 text-center">O que vem na caixa?</h1>
+                        <ul role="list" class="stack gap-5 mt-9">
+                            <li>
+                                <span class="text-primary-500 inline-block mr-2">&#x2713;</span> 
+                                Deliciosos e frescos ingredientes prontos para preparo
+                            </li>
+                            <li>
+                                <span class="text-primary-500 inline-block mr-2">&#x2713;</span> 
+                                Kits de comida convenientes para qualquer hora
+                            </li>
+                            <li>
+                                <span class="text-primary-500 inline-block mr-2">&#x2713;</span> 
+                                Receitas práticas e fáceis de se seguir
+                            </li>
+                            <li>
+                                <span class="text-primary-500 inline-block mr-2">&#x2713;</span> 
+                                Uma experiência de cozinha inesquecível
+                            </li>
+                            <li>
+                                <span class="text-primary-500 inline-block mr-2">&#x2713;</span> 
+                                O estímulo para hábitos de alimentação saudáveis
+                            </li>
+                        </ul>
+                        <a href="#" class="button--block text-center mt-7">Ver planos</a>
+                    </div>
+                    <div>
+                        <img class="shadow-2" src="<%= require('../assets/img/caixa.jpg') %>">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
         <!-- PRODUTOS -->
-        <section class="foods | bg-primary-400">
+        <section id="foods" class="bg-primary-400">
             <div class="container">
                 <div class="text-center">
                     <h1 class="text-neutral-100 fs-600">Deleite-se com nossos melhores pratos</h1>
@@ -176,10 +215,10 @@
 
 
         <!-- DEPOIMENTOS -->
-        <section class="testimonials">
+        <section id="testimonials">
             <div class="container">
                 <div class="text-center">
-                    <h1 class="text-primary-800 fs-600">O que nossos clientes dizem</h1>
+                    <h1 class="text-primary-700 fs-600">O que nossos clientes dizem</h1>
                     <p class="text-neutral-500 mt-2 mx-auto">Palavras de quem confia em nosso trabalho</p>
                 </div>
 
@@ -229,7 +268,7 @@
 
 
         <!-- CTA -->
-        <section class="cta">
+        <section id="cta">
             <div class="text-center p-4">
                 <h1 class="fs-600 text-neutral-100 mb-7">Tem interesse na nossa comida?</h1>
                 <a href="#" class="button--light button--outline">Ver planos</a>

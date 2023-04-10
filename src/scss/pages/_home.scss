@@ -6,7 +6,7 @@
  * HERO SECTION
  *
  */
-.hero {
+#hero {
     @include center(flex);
     background-image: url("../assets/img/hero-bg.jpg");
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@
         background-size: cover;
     };
 
-    &__box {
+    .hero-box {
         @include mq(medium) {
             width: 50%;
         }
@@ -32,10 +32,21 @@
  * SERVICES SECTION
  *
  */
-.services {
+#services {
     
     .services-item {
         width: 400px;
+    }
+}
+
+#box-contents {
+    border-top: 1px solid $color-neutral-300;
+
+    .even-columns {        
+        gap: $size-9;
+        @include mq(medium) {
+            gap: $size-13;
+        }
     }
 }
 
@@ -44,7 +55,7 @@
  * FOOD SLIDER SECTION
  *
  */
- .foods {
+ #foods {
      clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 98%);
 
      @include mq(medium) {
@@ -98,25 +109,11 @@
 
 
  /**
-  *
-  * CTA SECTION
-  *
-  */
-.cta {
-    background-image: url("../assets/img/cta-bg.jpg");
-    background-position: center;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.7);
-    background-blend-mode: multiply;
-}
-
-
-/**
  *
  * TESTIMONIALS SECTION
  *
  */
-.testimonials {
+#testimonials {
     .testimonials-grid {
         display: grid;
         gap: $size-4;
@@ -179,3 +176,18 @@
         }
     }
 }
+
+
+ /**
+  *
+  * CTA SECTION
+  *
+  */
+#cta {
+    background-image: url("../assets/img/cta-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+}
+

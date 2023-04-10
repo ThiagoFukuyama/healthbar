@@ -10,17 +10,17 @@
     margin-left: auto;
     margin-right: auto;
 
-    &-sm {
+    &--sm {
         @extend .container;
         --container-max-width: #{toRem(840)};
     }
 
-    &-lg {
+    &--lg {
         @extend .container;
         --container-max-width: #{toRem(1400)};
     }
 
-    &-fluid {
+    &--fluid {
         @extend .container;
         --container-max-width: 100%;
     }
