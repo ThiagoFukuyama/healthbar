@@ -55,14 +55,14 @@
  * FOOD SLIDER SECTION
  *
  */
- #foods {
+ #dishes {
      clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 98%);
 
      @include mq(medium) {
          clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 96%);
         
     }
-     .food-slider {
+     .dish-slider {
         --swiper-pagination-color: #{$color-neutral-100};
         padding-bottom: $size-10;
         padding-left: $size-1;

@@ -4,7 +4,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
 
-const foodSlider = new Swiper(".food-slider", {
+const foodSlider = new Swiper(".dish-slider", {
     modules:  [Pagination, Autoplay],
     direction: 'horizontal',
     slidesPerView: 1,
