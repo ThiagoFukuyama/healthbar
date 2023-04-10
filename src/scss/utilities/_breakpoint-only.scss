@@ -4,7 +4,7 @@
 
 @if map.has-key($breakpoints, large) {
 
-    .large-screen-only {
+    .large-screens-only {
         display: none;
         @include mq(medium) {
             display: block;
@@ -13,11 +13,11 @@
 
 }
 
-@if map.has-key($breakpoints, small) {
+@if map.has-key($breakpoints, medium) {
 
-    .small-screen-only {
+    .small-screens-only {
         display: none;
-        @include mq(small, down) {
+        @include mq(medium, down) {
             display: block;
         }
     }
