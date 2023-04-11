@@ -13,7 +13,20 @@
     left: 0;
     right: 0;
     background-color: transparent;
-    z-index: 3;
+
+    .skip-to-main-content-link {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        transform: translateX(-100%);
+        font-size: $fs-200;
+        z-index: 5;
+        transition: 150ms ease-out;
+
+        &:focus {
+            transform: translateX(0);
+        }
+    }
 
     .primary-header-inner {
         display: flex;
@@ -24,7 +37,7 @@
     }
 
     .logo {
-        z-index: 3;
+        z-index: 4;
 
         * {
             transition: 200ms ease-in-out;
@@ -40,7 +53,7 @@
     button[aria-controls="primary-navigation"] {
         border: 0;
         background-color: transparent;
-        z-index: 3;
+        z-index: 4;
         @include mq(medium) {
             display: none;
         }
@@ -106,6 +119,7 @@
             overflow-y: auto;
             opacity: 0;
             visibility: hidden;
+            z-index: 3;
             transition: 200ms ease-in-out;
         }
 
