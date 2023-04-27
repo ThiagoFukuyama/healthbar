@@ -1,0 +1,25 @@
+
+@use "../abstracts" as *;
+
+#back-to-top-button {
+    position: fixed;
+    right: 12px;
+    bottom: 12px;
+    z-index: 2;
+    background-color: $color-primary-500;
+    border: 0;
+    padding: 0.75rem;
+    border-top-left-radius:70% 60% ;
+    border-bottom-right-radius:70% 60%;
+    transition: 100ms ease-out;
+    opacity: 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+
+    &.active {
+        opacity: 0.9;
+    }
+
+    svg {
+        width: 16px;
+    }
+}
