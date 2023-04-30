@@ -21,7 +21,7 @@
         background-size: cover;
     };
 
-    .hero-box {
+    .hero__box {
         @include mq(medium) {
             width: 50%;
         }
@@ -35,7 +35,7 @@
  */
 #services {
     
-    .services-item {
+    .services__item {
         width: 400px;
 
         &:last-of-type {
@@ -49,7 +49,7 @@
 #box-contents {
     border-top: 1px solid $color-neutral-300;
 
-    .box-contents-columns {        
+    .box-contents__columns {        
         gap: $size-9;
         @include mq(large) {
             gap: $size-13;
