@@ -1,6 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackHarddiskPlugin = require("html-webpack-harddisk-plugin");
 
 const templatesDirectoryPath = "src/pages";
 const templates = [];
@@ -14,6 +15,7 @@ fs.readdirSync(templatesDirectoryPath).forEach((file) => {
                 __dirname,
                 "src/assets/img/icons/favicon.ico"
             ),
+            alwaysWriteToDisk: true,
         })
     );
 });
@@ -56,5 +58,5 @@ module.exports = {
             },
         ],
     },
-    plugins: [...templates],
+    plugins: [...templates, new HtmlWebpackHarddiskPlugin()],
 };
