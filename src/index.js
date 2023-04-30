@@ -1,6 +1,5 @@
-
-import "./scss/main.scss"
-import "./js/toggleNavigation"
-import "./js/backToTopButton"
-import "./js/dishSlider"
-import "./js/lazyLoading"
+import "./scss/main.scss";
+import "./js/toggleNavigation";
+import "./js/backToTopButton";
+import "./js/dishSlider";
+import "./js/lazyLoading";
