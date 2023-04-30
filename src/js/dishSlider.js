@@ -23,3 +23,9 @@ const foodSlider = new Swiper(".dish-slider", {
         clickable: true,
     },
 });
+
+const buttonPrev = document.querySelector(".dish-slider-button-prev");
+const buttonNext = document.querySelector(".dish-slider-button-next");
+
+buttonPrev.addEventListener("click", () => foodSlider.slidePrev());
+buttonNext.addEventListener("click", () => foodSlider.slideNext());
