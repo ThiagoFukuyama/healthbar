@@ -147,14 +147,14 @@
                 }
             }
 
-            .testimonial-header {
+            &__header {
                 display: flex;
                 align-items: center;
                 flex-wrap: wrap;
                 gap: $size-3;
             }
 
-            img {
+            &__image {
                 width: 40px;
                 height: 40px;
                 object-fit: cover;
@@ -163,21 +163,24 @@
                 border: 1px solid $color-neutral-400;
             }
 
-            &.quote-open::before,
-            &.quote-close::before {
-                font-size: 18rem;
-                position: absolute;
-                opacity: 0.2;
-                z-index: -1;
-                right: 15%;
-                top: -6rem;
+            &--quote-open,
+            &--quote-close {
+                @extend .testimonial;
+                &::before {
+                    font-size: 18rem;
+                    position: absolute;
+                    opacity: 0.2;
+                    z-index: -1;
+                    right: 15%;
+                    top: -6rem;
+                }
             }
 
-            &.quote-open::before {
+            &--quote-open::before {
                 content: "“";
             }
 
-            &.quote-close::before {
+            &--quote-close::before {
                 content: "”";
             }
         }
