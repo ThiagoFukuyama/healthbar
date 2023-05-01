@@ -30,8 +30,8 @@ git clone https://github.com/ThiagoFukuyama/healthbar.git
 cd healthbar
 ```
 
-2. Instale as dependências executando `npm install`
+2. Instale as dependências executando o comando `npm install`
 
-3. Execute o comando `npm run dev` para criar o diretório  `dist/`
+3. Execute `npm run dev` para criar o diretório  `dist/`
 
 4. Caso já tenha realizado o passo anterior, basta executar `npm start` para apenas iniciar o servidor de desenvolvimento
