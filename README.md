@@ -17,7 +17,7 @@
 
 # Sobre
 
-Esta é uma [***Landing Page***](https://mailchimp.com/pt-br/marketing-glossary/landing-pages/) moderna com o tema alimentação saudável. *Workflow* criado com [**Webpack** ](https://webpack.js.org/) e seus plugins, utilizando **HTML**, [**SASS**](https://sass-lang.com/) e **JavaScript**.
+Esta é uma *Landing Page* moderna com o tema alimentação saudável. *Workflow* criado com [**Webpack** ](https://webpack.js.org/) e seus plugins, utilizando **HTML**, [**SASS**](https://sass-lang.com/) e **JavaScript**.
 
 # Instalação
 
