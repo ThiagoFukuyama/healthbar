@@ -2,16 +2,25 @@
   "name": "healthbar",
   "version": "1.0.0",
   "description": "Landing Page e sistema de design para empresa de alimentação saudável e entrega de alimentos fictícia",
+  "author": {
+    "name": "Thiago Fukuyama Marcilli",
+    "email": "thiagofkm@gmail.com"
+  },
+  "license": "MIT",
   "main": "src/index.js",
+  "private": true,
+  "keywords": [
+    "landing page", 
+    "healthy", 
+    "food", 
+    "healthy food"
+  ],
   "scripts": {
     "start": "webpack serve --config webpack.dev.js",
     "dev": "run-s build:dev start",
     "build:dev": "webpack --config webpack.dev.js",
     "build:prod": "webpack --config webpack.prod.js"
   },
-  "keywords": [],
-  "author": "Thiago Fukuyama Marcilli",
-  "license": "ISC",
   "dependencies": {
     "swiper": "^9.1.1"
   },
