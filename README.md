@@ -32,6 +32,6 @@ cd healthbar
 
 2. Instale as dependências executando o comando `npm install`
 
-3. Execute `npm run dev` para criar o diretório  `dist/`
+3. Execute `npm run dev` para criar o diretório  `dist/` e iniciar o servidor de desenvolvimento
 
-4. Tendo o diretório `dist/`, basta executar `npm start` para iniciar apenas o servidor de desenvolvimento quando necessário
+4. Tendo o diretório `dist/`, basta executar `npm start` para apenas iniciar o servidor de desenvolvimento, quando necessário
