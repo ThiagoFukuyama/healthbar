@@ -23,15 +23,15 @@ Esta é uma *Landing Page* moderna com o tema alimentação saudável. *Workflow
 
 [**Node.js**](https://nodejs.org/en) é necessário para inicialização do projeto.
 
-1. Clone o repositório:
+- Clone o repositório:
 
 ```
 git clone https://github.com/ThiagoFukuyama/healthbar.git
 cd healthbar
 ```
 
-2. Instale as dependências executando `npm install`
+- Instale as dependências executando o comando `npm install`
 
-3. Execute o comando `npm run dev` para criar o diretório  `dist/`
+- Execute `npm run dev` para criar o diretório  `dist/` e iniciar o servidor de desenvolvimento
 
-4. Caso já tenha realizado o passo anterior, basta executar `npm start` para apenas iniciar o servidor de desenvolvimento
+- Tendo o diretório `dist/`, execute `npm start` para **apenas** iniciar o servidor de desenvolvimento, quando necessário
