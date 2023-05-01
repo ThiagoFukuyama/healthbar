@@ -34,4 +34,4 @@ cd healthbar
 
 3. Execute `npm run dev` para criar o diretório  `dist/`
 
-4. Caso já tenha realizado o passo anterior, basta executar `npm start` para apenas iniciar o servidor de desenvolvimento
+4. Tendo o diretório `dist/`, basta executar `npm start` para iniciar apenas o servidor de desenvolvimento quando necessário
