@@ -6,7 +6,7 @@
     </a>
     <br>
     <br>
-    <p><i>Landing Page e sistema de design para empresa de alimentação saudável e entrega de alimentos fictícia</i></p>
+    <p><i>Landing Page e sistema de design para empresa fictícia de alimentação saudável e entrega de alimentos</i></p>
 </div>
 
 <br>
