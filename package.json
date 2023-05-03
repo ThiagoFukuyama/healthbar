@@ -1,7 +1,7 @@
 {
   "name": "healthbar",
   "version": "1.0.0",
-  "description": "Landing Page e sistema de design para empresa de alimentação saudável e entrega de alimentos fictícia",
+  "description": "Landing Page e sistema de design para empresa fictícia de alimentação saudável e entrega de alimentos",
   "author": {
     "name": "Thiago Fukuyama Marcilli",
     "email": "thiagofkm@gmail.com"
@@ -13,7 +13,8 @@
     "landing page", 
     "healthy", 
     "food", 
-    "healthy food"
+    "healthy food",
+    "delivery"
   ],
   "scripts": {
     "start": "webpack serve --config webpack.dev.js",
