@@ -51,7 +51,7 @@
     border-top: 1px solid $color-neutral-300;
 
     .box-contents__columns {        
-        gap: $size-9;
+        gap: $size-10;
         @include mq(large) {
             gap: $size-13;
         }
