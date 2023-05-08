@@ -4,12 +4,13 @@
 .button {
     --btn-bg: #{$color-primary-500};
     --btn-before-bg: #{$color-primary-600};
-    --btn-text: #{$color-neutral-100};
+    --btn-text-color: #{$color-neutral-100};
+    --transition: #{$transition-1};
 
     position: relative;
     display: inline-block;
-    background-color: var(--btn-bg);
-    color: var(--btn-text);
+    color: var(--btn-text-color);
+    background-color: transparent;
     border: 0;
     line-height: 1;
     padding: $size-4 $size-5;
@@ -17,44 +18,47 @@
     text-decoration: none;
     text-transform: uppercase;
     overflow: hidden;
+    transition: 150ms var(--transition);
     z-index: 1;
-    transition: 200ms ease-in-out;
 
-    &:hover,
-    &:focus {
-        background-color: transparent;
-        transition: 300ms ease-in-out;
+    &::after {
+        content: "";
+        @include inset(0, 0, 0, 0);
+        background-color: var(--btn-bg);
+        z-index: -2;
     }
-
+ 
     &::before {
         content: "";
         @include inset(0, 0, 0, 0);
         background-color: var(--btn-before-bg);
         transform: scaleX(0);
         transform-origin: left;
-        transition: transform 150ms ease-in-out;
+        transition: transform 150ms var(--transition);
         z-index: -1;
     }
 
     &:hover::before,
     &:focus::before {
         transform: scaleX(1);
-    }
-     
+    }   
 
     &--light {
         @extend .button;
         --btn-bg: #{$color-neutral-100};
-        --btn-text: #{$color-neutral-800};
+        --btn-text-color: #{$color-neutral-800};
         --btn-before-bg: #{$color-neutral-200};
     }
 
     &--outline {
         @extend .button;
-        background-color: transparent;
         color: var(--btn-bg);
         outline: 2px solid;
         outline-color: var(--btn-bg);
+
+        &::after {
+            background-color: transparent;
+        }
 
         &::before {
             background-color: var(--btn-bg);
@@ -62,8 +66,7 @@
 
         &:hover,
         &:focus {
-            background-color: var(--btn-bg);
-            color: var(--btn-text);
+            color: var(--btn-text-color);
         }
     }
 
