@@ -67,8 +67,7 @@ ul[role="list"] {
     position: absolute;
 }
 
-::selection,
-::-moz-selection {
-    background-color: $color-primary-400;
-    color: $color-neutral-100
+::selection {
+    background-color: $color-primary-500;
+    color: $color-neutral-100;
 }
