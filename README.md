@@ -1,6 +1,5 @@
 
 <div align="center">
-    <br>
     <a href="https://github.com/ThiagoFukuyama/healthbar">
         <img alt="HealthBar logo" width="500" src="https://user-images.githubusercontent.com/99801948/235383748-8e6566da-b565-431d-8dd6-afc0446357b9.svg">
     </a>
@@ -8,8 +7,6 @@
     <br>
     <p><i>Landing Page e sistema de design para empresa fictícia de alimentação saudável e entrega de alimentos</i></p>
 </div>
-
-<br>
 
 # Sobre
 
