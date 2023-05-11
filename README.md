@@ -2,7 +2,7 @@
 <div align="center">
     <br>
     <a href="https://github.com/ThiagoFukuyama/healthbar">
-        <img alt="HealthBar logo" width="500" src="https://user-images.githubusercontent.com/99801948/235383748-8e6566da-b565-431d-8dd6-afc0446357b9.svg">
+        <img alt="HealthBar's logo" width="500" src="https://user-images.githubusercontent.com/99801948/235383748-8e6566da-b565-431d-8dd6-afc0446357b9.svg">
     </a>
     <br>
     <br>
@@ -15,7 +15,7 @@ Esta é uma *Landing Page* moderna com o tema alimentação saudável. *Workflow
 
 ***Disponível em*** [https://healthbar.pages.dev](https://healthbar.pages.dev)
 
-![Healthbar's hero section](https://github.com/ThiagoFukuyama/healthbar/assets/99801948/bf3b9f76-9ba2-4a5e-a199-e2b4eb7053d6)
+![HealthBar's hero section](https://github.com/ThiagoFukuyama/healthbar/assets/99801948/bf3b9f76-9ba2-4a5e-a199-e2b4eb7053d6)
 
 # Instalação
 
