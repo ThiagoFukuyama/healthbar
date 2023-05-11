@@ -11,13 +11,13 @@
 
 <br>
 
-***Disponível em*** [https://healthbar.pages.dev](https://healthbar.pages.dev)
-
-![HealthBar's hero section](https://user-images.githubusercontent.com/99801948/235386931-87653458-29cc-49ed-b1de-19ebf0f8ed75.png)
-
 # Sobre
 
 Esta é uma *Landing Page* moderna com o tema alimentação saudável. *Workflow* criado com [**Webpack** ](https://webpack.js.org/) e seus plugins, utilizando **HTML**, [**SASS**](https://sass-lang.com/) e **JavaScript**.
+
+***Disponível em*** [https://healthbar.pages.dev](https://healthbar.pages.dev)
+
+![Healthbar's hero section](https://github.com/ThiagoFukuyama/healthbar/assets/99801948/caa72552-e602-4e19-bf15-b4c03236182e)
 
 # Instalação
 
