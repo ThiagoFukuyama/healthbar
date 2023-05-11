@@ -7,6 +7,7 @@
     <br>
     <br>
     <p><i>Landing Page e sistema de design para empresa fictícia de alimentação saudável e entrega de alimentos</i></p>
+    <br>
 </div>
 
 # Sobre
@@ -15,7 +16,7 @@ Esta é uma *Landing Page* moderna com o tema alimentação saudável. *Workflow
 
 ***Disponível em*** [https://healthbar.pages.dev](https://healthbar.pages.dev)
 
-![Healthbar's hero section](https://github.com/ThiagoFukuyama/healthbar/assets/99801948/caa72552-e602-4e19-bf15-b4c03236182e)
+![Healthbar's hero section](https://github.com/ThiagoFukuyama/healthbar/assets/99801948/bf3b9f76-9ba2-4a5e-a199-e2b4eb7053d6)
 
 # Instalação
 
