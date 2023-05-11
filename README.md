@@ -7,7 +7,6 @@
     <br>
     <br>
     <p><i>Landing Page e sistema de design para empresa fictícia de alimentação saudável e entrega de alimentos</i></p>
-    <br>
 </div>
 
 # Sobre
