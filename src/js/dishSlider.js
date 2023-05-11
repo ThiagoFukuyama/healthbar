@@ -12,9 +12,9 @@ const foodSlider = new Swiper(".dish-slider", {
     slidesOffsetAfter: 0,
     centeredSlides: true,
 
-    speed: 1000,
+    speed: 1300,
     autoplay: {
-        delay: 3000,
+        delay: 4500,
         disableOnInteraction: true,
     },
 
