@@ -47,6 +47,11 @@
     }
 }
 
+/**
+ *
+ * BOX CONTENTS SECTION
+ *
+ */
 #box-contents {
     border-top: 1px solid $color-neutral-300;
 
@@ -139,7 +144,16 @@
         svg {
             width: 80%; 
             fill: $color-neutral-100;
+            transition: 200ms $transition-1;
         }
+     }
+
+     .dish-slider-button-prev:hover svg {
+        transform: translateX(-6px);
+     }
+
+     .dish-slider-button-next:hover svg {
+        transform: translateX(6px);
      }
  }
 
