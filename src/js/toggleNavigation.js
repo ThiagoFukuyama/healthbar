@@ -3,7 +3,7 @@ const navToggle = document.querySelector(
 );
 const headerLogo = document.querySelector(".primary-header .logo");
 
-navToggle.addEventListener("click", toggleNavigation);
+navToggle?.addEventListener("click", toggleNavigation);
 
 function toggleNavigation() {
     let isExpanded =

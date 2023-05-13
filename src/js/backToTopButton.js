@@ -1,6 +1,6 @@
 const backToTopButton = document.getElementById("back-to-top-button");
 
-backToTopButton.addEventListener("click", () => {
+backToTopButton?.addEventListener("click", () => {
     window.scrollTo({
         top: 0,
         behavior: "smooth",
