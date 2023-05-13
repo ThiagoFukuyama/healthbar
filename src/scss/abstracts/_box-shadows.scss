@@ -1,0 +1,13 @@
+
+@use "sizes" as *;
+@use "sass:list";
+
+$box-shadows: 
+    0 $size-1 $size-4 rgba(0 0 0 / 0.08),
+    0 $size-1 $size-4 rgba(0 0 0 / 0.15),
+    0 $size-1 $size-4 rgba(0 0 0 / 0.35),
+;
+
+$shadow-1: list.nth($box-shadows, 1);
+$shadow-2: list.nth($box-shadows, 2);
+$shadow-3: list.nth($box-shadows, 3);
