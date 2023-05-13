@@ -24,17 +24,10 @@
         background-color: $color-neutral-100;
         border: 0;
         border-bottom: 1px solid $color-neutral-200;
-        padding-left: var(--padding-child-x);
+        padding-top: var(--padding-child-y);
         padding-right: var(--padding-child-x);
+        padding-left: var(--padding-child-x);
         padding-bottom: var(--padding-child-y);
-        
-        &:first-of-type {
-            padding-top: var(--padding-child-y);
-        }
-
-        &:not(:first-of-type) {
-            // margin-top: calc(-1 * var(--padding-child-y));
-        }
     }
     
     &__icon {
@@ -60,8 +53,12 @@
         overflow: hidden;
         padding-left: var(--padding-child-x);
         padding-right: var(--padding-child-x);
+        
+        transition: 250ms $transition-1;
+    }
+
+    &__header[aria-expanded="true"] + &__panel {
         margin-top: var(--padding-child-y);
-        // margin-bottom: var(--padding-child-y);
-        transition: max-height 250ms $transition-1;
+        margin-bottom: var(--padding-child-y);
     }
 }
