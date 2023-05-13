@@ -60,11 +60,15 @@
         padding-right: var(--padding-child-x);
         visibility: hidden;
         transition: 250ms $transition-1;
+
+        > * {
+            max-width: 100%;
+            margin-top: var(--padding-child-y);
+            margin-bottom: var(--padding-child-y);
+        }
     }
 
     &__header[aria-expanded="true"] + &__panel {
-        margin-top: var(--padding-child-y);
-        margin-bottom: var(--padding-child-y);
         visibility: visible;
     }
 }
