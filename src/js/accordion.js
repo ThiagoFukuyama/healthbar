@@ -1,16 +1,20 @@
+const accordionButtons = [
+    ...document.querySelectorAll(".accordion .accordion__header"),
+];
+const accordionPanels = [
+    ...document.querySelectorAll(".accordion .accordion__panel"),
+];
 
-const accordionButtons = [...document.querySelectorAll(".accordion .accordion__header")];
-const accordionPanels = [...document.querySelectorAll(".accordion .accordion__panel")];
-
-accordionButtons?.forEach((button) => {
+accordionButtons?.forEach((button, index) => {
     button.addEventListener("click", () => {
-        // closeAllPanels();
+        closeAllPanels(index);
         toggleAccordionPanel(button);
     });
-})
+});
 
 function toggleAccordionPanel(button) {
-    const isOpened = button.getAttribute("aria-expanded") === "true" ? true : false;
+    const isOpened =
+        button.getAttribute("aria-expanded") === "true" ? true : false;
     const panel = button.nextElementSibling;
 
     if (isOpened) {
@@ -22,9 +26,11 @@ function toggleAccordionPanel(button) {
     }
 }
 
-function closeAllPanels() {
-    accordionPanels.forEach((panel, i) => {
-        accordionButtons[i].setAttribute("aria-expanded", "false");
-        panel.style.maxHeight = 0;
-    })
+function closeAllPanels(except) {
+    accordionPanels.forEach((panel, index) => {
+        if (except !== index) {
+            accordionButtons[index].setAttribute("aria-expanded", "false");
+            panel.style.maxHeight = 0;
+        }
+    });
 }
