@@ -13,9 +13,8 @@ accordionButtons?.forEach((button, index) => {
 });
 
 function toggleAccordionPanel(button) {
-    const isOpened =
-        button.getAttribute("aria-expanded") === "true" ? true : false;
     const panel = button.nextElementSibling;
+    const isOpened = button.getAttribute("aria-expanded") === "true";
 
     if (isOpened) {
         button.setAttribute("aria-expanded", "false");
