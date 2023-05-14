@@ -19,7 +19,7 @@ function toggleAccordionPanel(button) {
 
     if (isOpened) {
         button.setAttribute("aria-expanded", "false");
-        panel.style.maxHeight = 0;
+        panel.style.maxHeight = null;
     } else {
         button.setAttribute("aria-expanded", "true");
         panel.style.maxHeight = `${panel.scrollHeight}px`;
