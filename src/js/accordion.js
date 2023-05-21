@@ -18,9 +18,11 @@ function toggleAccordionPanel(button) {
 
     if (isOpened) {
         button.setAttribute("aria-expanded", "false");
+        panel.setAttribute("aria-hidden", "true");
         panel.style.maxHeight = "0px";
     } else {
         button.setAttribute("aria-expanded", "true");
+        panel.setAttribute("aria-hidden", "false");
         panel.style.maxHeight = `${panel.scrollHeight}px`;
     }
 }
@@ -29,7 +31,8 @@ function closeAllPanels(except) {
     accordionPanels.forEach((panel, index) => {
         if (except !== index) {
             accordionButtons[index].setAttribute("aria-expanded", "false");
-            panel.style.maxHeight = 0;
+            panel.setAttribute("aria-hidden", "true");
+            panel.style.maxHeight = "0px";
         }
     });
 }
