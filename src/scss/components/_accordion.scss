@@ -38,19 +38,20 @@
     
     &__icon {
         position: relative;
+        transform: rotate(-45deg);
         transition: 250ms $transition-1;
 
         &::after {
-            content: "+";
+            content: "\00D7";
             font-family: Arial, Helvetica, sans-serif;
             color: $color-primary-500;
-            font-size: 2.2rem;
+            font-size: 2.125rem;
             transform-origin: center;
         }
     }
 
     &__header[aria-expanded="true"] &__icon {
-        transform: rotate(45deg);
+        transform: rotate(0);
     }
 
     &__panel {
@@ -68,7 +69,7 @@
         }
     }
 
-    &__header[aria-expanded="true"] + &__panel {
+    &__panel[aria-hidden="false"] {
         visibility: visible;
     }
 }
