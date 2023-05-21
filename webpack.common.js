@@ -1,24 +1,6 @@
 const path = require("path");
-const fs = require("fs");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const HtmlWebpackHarddiskPlugin = require("html-webpack-harddisk-plugin");
-
-const templatesDirectoryPath = "src/pages";
-const templates = [];
-
-fs.readdirSync(templatesDirectoryPath).forEach((file) => {
-    templates.push(
-        new HtmlWebpackPlugin({
-            filename: file,
-            template: path.resolve(templatesDirectoryPath, file),
-            favicon: path.resolve(
-                __dirname,
-                "src/assets/img/icons/favicon.ico"
-            ),
-            alwaysWriteToDisk: true,
-        })
-    );
-});
 
 module.exports = {
     entry: {
@@ -58,5 +40,16 @@ module.exports = {
             },
         ],
     },
-    plugins: [...templates, new HtmlWebpackHarddiskPlugin()],
+    plugins: [
+        new HtmlWebpackPlugin({
+            filename: "index.html",
+            template: path.resolve(__dirname, "src/pages/index.html"),
+            favicon: path.resolve(
+                __dirname,
+                "src/assets/img/icons/favicon.ico"
+            ),
+            alwaysWriteToDisk: true,
+        }),
+        new HtmlWebpackHarddiskPlugin(),
+    ],
 };
