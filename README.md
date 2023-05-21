@@ -1,4 +1,3 @@
-
 <div align="center">
     <br>
     <a href="https://github.com/ThiagoFukuyama/healthbar">
@@ -11,9 +10,9 @@
 
 # Sobre
 
-Esta é uma *Landing Page* moderna com o tema alimentação saudável. *Workflow* criado com [**Webpack** ](https://webpack.js.org/) e seus plugins, utilizando **HTML**, [**SASS**](https://sass-lang.com/) e **JavaScript**.
+Esta é uma _Landing Page_ moderna com o tema alimentação saudável. _Workflow_ criado com [**Webpack** ](https://webpack.js.org/) e seus plugins, utilizando **HTML**, [**SASS**](https://sass-lang.com/) e **JavaScript**.
 
-***Disponível em*** [https://healthbar.pages.dev](https://healthbar.pages.dev)
+**_Disponível em_** [https://healthbar.pages.dev](https://healthbar.pages.dev)
 
 ![HealthBar's hero section](https://github.com/ThiagoFukuyama/healthbar/assets/99801948/bf3b9f76-9ba2-4a5e-a199-e2b4eb7053d6)
 
@@ -21,15 +20,15 @@ Esta é uma *Landing Page* moderna com o tema alimentação saudável. *Workflow
 
 [**Node.js**](https://nodejs.org/en) é necessário para inicialização do projeto.
 
-- Clone o repositório:
+-   Clone o repositório:
 
 ```
 git clone https://github.com/ThiagoFukuyama/healthbar.git
 cd healthbar
 ```
 
-- Instale as dependências executando o comando `npm install`
+-   Instale as dependências executando o comando `npm install`
 
-- Execute `npm run dev` para criar o diretório  `dist/` e iniciar o servidor de desenvolvimento
+-   Execute `npm run build:dev` para criar o diretório `dist/`
 
-- Tendo o diretório `dist/`, execute `npm start` para **apenas** iniciar o servidor de desenvolvimento, quando necessário
+-   Tendo o diretório `dist/`, execute `npm start` para iniciar o servidor de desenvolvimento
