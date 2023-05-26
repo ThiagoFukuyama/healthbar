@@ -1,5 +1,5 @@
 const navToggle = document.querySelector(
-    "button[aria-controls='primary-navigation'"
+    "button[aria-controls='primary-navigation']"
 );
 const headerLogo = document.querySelector(".primary-header .logo");
 
