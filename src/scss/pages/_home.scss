@@ -37,7 +37,7 @@
 #services {
     
     .services__item {
-        width: 400px;
+        max-width: 400px;
         padding: $size-4 $size-5;
 
         &:last-of-type {
