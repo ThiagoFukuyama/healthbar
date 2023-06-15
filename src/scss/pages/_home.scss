@@ -37,14 +37,8 @@
 #services {
     
     .services__item {
-        --padding-x: #{$size-5};
-        --padding-y: #{$size-4};
-
         width: 400px;
-        padding-left: var(--padding-x);
-        padding-right: var(--padding-x);
-        padding-top: var(--padding-y);
-        padding-bottom: var(--padding-y);
+        padding: $size-4 $size-5;
 
         &:last-of-type {
             @include mq(small, down) {
