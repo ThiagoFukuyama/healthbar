@@ -37,7 +37,14 @@
 #services {
     
     .services__item {
+        --padding-x: #{$size-5};
+        --padding-y: #{$size-4};
+
         width: 400px;
+        padding-left: var(--padding-x);
+        padding-right: var(--padding-x);
+        padding-top: var(--padding-y);
+        padding-bottom: var(--padding-y);
 
         &:last-of-type {
             @include mq(small, down) {
@@ -75,8 +82,8 @@
  #dishes {
      clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 98%);
 
-     @include mq(medium) {
-         clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 96%);
+    @include mq(medium) {
+        clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 96%);
     }
 
     .dishes-wrapper {
