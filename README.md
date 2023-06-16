@@ -10,7 +10,7 @@
 
 # Sobre
 
-Esta é uma _Landing Page_ moderna com o tema alimentação saudável. _Workflow_ criado com [**Webpack** ](https://webpack.js.org/) e seus plugins, utilizando **HTML**, [**SASS**](https://sass-lang.com/) e **JavaScript**.
+_Landing Page_ moderna com o tema alimentação saudável. _Workflow_ criado com [**Webpack** ](https://webpack.js.org/) e seus plugins, utilizando **HTML**, [**SASS**](https://sass-lang.com/) e **JavaScript**.
 
 **_Disponível em_** [https://healthbar.pages.dev](https://healthbar.pages.dev)
 
