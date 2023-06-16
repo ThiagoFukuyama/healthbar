@@ -1,8 +1,8 @@
 const accordionButtons = [
-    ...document.querySelectorAll(".accordion .accordion__header"),
+    ...document.querySelectorAll("[data-accordion-button]"),
 ];
 const accordionPanels = [
-    ...document.querySelectorAll(".accordion .accordion__panel"),
+    ...document.querySelectorAll("[data-accordion-panel]"),
 ];
 
 accordionButtons?.forEach((button, index) => {
