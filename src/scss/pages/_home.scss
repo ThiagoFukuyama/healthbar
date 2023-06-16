@@ -256,22 +256,20 @@
     border-top: 1px solid $color-neutral-300;
     overflow: hidden;
     
-    svg {
+    .faq__bg-image {
         display: none;
-    }
-
-    @include mq(medium) {
-        svg {
-            display: block;
-            position: absolute;
-            top: -10%;
-            right: 10%;
-            width: 500px;
-            fill: $color-primary-500;
-            transform: rotate(25deg);
-            opacity: 0.5;
-            z-index: -1;
+        @include mq(medium) {
+                display: block;
+                position: absolute;
+                top: -10%;
+                right: 10%;
+                width: 500px;
+                fill: $color-primary-500;
+                transform: rotate(25deg);
+                opacity: 0.5;
+                z-index: -1;
         }
     }
+
  }
 
